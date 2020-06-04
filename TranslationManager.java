@@ -262,6 +262,38 @@ public class TranslationManager {
 		}
 	}
 	
+	public String returnGenericModuleEnabledChange(String module) {
+		if(lang.equals("de")) {
+			return module+" wurde aktiviert.";
+		}else {
+			return module+" has been enabled";
+		}
+	}
+	
+	public String returnGenericModuleDisabledChange(String module) {
+		if(lang.equals("de")) {
+			return module+" wurde deaktiviert.";
+		}else {
+			return module+" has been disabled";
+		}
+	}
+	
+	public String returnGenericModuleEnabled(String module) {
+		if(lang.equals("de")) {
+			return module+" ist aktuell aktiviert.";
+		}else {
+			return module+" is currently enabled";
+		}
+	}
+	
+	public String returnGenericModuleDisabled(String module) {
+		if(lang.equals("de")) {
+			return module+" ist aktuell deaktiviert.";
+		}else {
+			return module+" is currently disabled";
+		}
+	}
+	
 	public String returnGenericTryAgainTitle() {
 		if(lang.equals("de")) {
 			return "Versuche es erneut";
@@ -689,6 +721,39 @@ public class TranslationManager {
 			return "Server ID: "+server_id+"\nKey: "+key+"\n\n*Nutze diese Anmeldedaten um dich in Dashboard bei https://console.discordcaptcha.xyz anzumelden.*";
 		}else {
 			return "Guild ID: "+server_id+"\nKey: "+key+"\n\n*Use these credentials to log in to the Web-Dashboard at https://console.discordcaptcha.xyz*";
+		}
+	}
+	
+	//WARN COMMAND
+	public String returnWarnSuccessTitle() {
+		if(lang.equals("de")) {
+			return "Nutzer wurde Verwarnt";
+		}else {
+			return "User warned";
+		}
+	}
+	
+	public String returnWarnSuccessDescription() {
+		if(lang.equals("de")) {
+			return "Nutzer wurde erfolgreich Verwarnt.";
+		}else {
+			return "User was warned successfully.";
+		}
+	}
+	
+	public String returnWarnArgumentsMissingTitle() {
+		if(lang.equals("de")) {
+			return "Argumente Fehlen";
+		}else {
+			return "Arguments missing";
+		}
+	}
+	
+	public String returnWarnArgumentsMissingDescription() {
+		if(lang.equals("de")) {
+			return "Richtige Benutzung:\nc/warn @Nutzer Grund";
+		}else {
+			return "Proper command usage:\nc/warn @User Reason";
 		}
 	}
 
