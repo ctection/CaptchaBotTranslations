@@ -69,6 +69,14 @@ public class TranslationManager {
 			return "Please vote using the link below to continue:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium and Enterprise Servers bypass vote-locks. To purchase, visit https://ctection.com/shop/";
 		}
 	}
+	
+	public String returnGenericCaptchaBotAdvert() {
+		if(lang.equals("de")) {
+			return "Sichere deinen Server von böswilligen Benutzern und automatisierten Angriffen: **[Lade CaptchaBot Ein!](https://discordcaptcha.com/invite/?ref=DM)**";
+		}else {
+			return "Secure your server from malicious users and automated attacks: **[Invite CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
+		}
+	}
 
 	//KICK COMMAND TRANSLATIONS
 	//No Members Tagged Header
@@ -254,11 +262,123 @@ public class TranslationManager {
 		}
 	}
 	
+	public String returnGenericTryAgainTitle() {
+		if(lang.equals("de")) {
+			return "Versuche es erneut";
+		}else {
+			return "Try Again";
+		}
+	}
+	
+	public String returnGenericChannelMissingErrorDescription() {
+		if(lang.equals("de")) {
+			return "Bitte erwähne einen Textkanal.";
+		}else {
+			return "Please mention a channel.";
+		}
+	}
+	
+	public String returnGenericRemainingAttempts() {
+		if(lang.equals("de")) {
+			return "Verbleibende Versuche";
+		}else {
+			return "Remaining attempts";
+		}
+	}
+	
 	public String returnGenericVerifiedTitle() {
 		if(lang.equals("de")) {
 			return "Verifiziert";
 		}else {
 			return "Verified";
+		}
+	}
+	
+	public String returnGenericNotSet() {
+		if(lang.equals("de")) {
+			return "Nicht gesetzt";
+		}else {
+			return "Not set";
+		}
+	}
+	
+	public String returnGenericNone() {
+		if(lang.equals("de")) {
+			return "Keine";
+		}else {
+			return "None";
+		}
+	}
+	
+	public String returnGenericEnabled() {
+		if(lang.equals("de")) {
+			return "Aktiviert";
+		}else {
+			return "Enabled";
+		}
+	}
+	
+	public String returnGenericDisabled() {
+		if(lang.equals("de")) {
+			return "Deaktiviert";
+		}else {
+			return "Disabled";
+		}
+	}
+	
+	public String returnGenericVerifiedMembers() {
+		if(lang.equals("de")) {
+			return "Verifizierte Mitglieder";
+		}else {
+			return "Verified Members";
+		}
+	}
+	
+	public String returnGenericSuspiciousMembers() {
+		if(lang.equals("de")) {
+			return "Verdächtige Mitglieder";
+		}else {
+			return "Suspicious Members";
+		}
+	}
+	
+	public String returnGenericSuspiciousBots() {
+		if(lang.equals("de")) {
+			return "Verdächtige Bots";
+		}else {
+			return "Suspicious Bots";
+		}
+	}
+	
+	public String returnGenericAmountDetected(String amount) {
+		if(lang.equals("de")) {
+			return amount+" erkannt";
+		}else {
+			return amount+" detected";
+		}
+	}
+	
+	public String returnGenericStartingTitle(String action) {
+		if(lang.equals("de")) {
+			return "Starte "+action;
+		}else {
+			return "Starting "+action;
+		}
+	}
+	
+	public String returnGenericThisMightTakeAWhileTitle() {
+		if(lang.equals("de")) {
+			return "Dies könnte eine Weile dauern...";
+		}else {
+			return "This might take a while...";
+		}
+	}
+	
+	public String returnGenericCheckDMs() {
+		if(lang.equals("de")) {
+			return "Bitte überprüfe deine Direktnachrichten.";
+		}else {
+			return "Please check your Direct Messages.";
 		}
 	}
 	
@@ -271,6 +391,55 @@ public class TranslationManager {
 			return "Your Account has been automatically verified.";
 		}
 	}
+	
+	public String returnVerificationSuccessful() {
+		if(lang.equals("de")) {
+			return "Dein Account wurde verifiziert.";
+		}else {
+			return "Your Account has been verified.";
+		}
+	}
+	
+	public String returnVerificationManualPrompt() {
+		if(lang.equals("de")) {
+			return "Bitte absolviere diesen CAPTCHA um fortzufahren";
+		}else {
+			return "Please complete this CAPTCHA to continue";
+		}
+	}
+	
+	public String returnVerificationManualDetailedPromptTitle() {
+		if(lang.equals("de")) {
+			return "CaptchaBot | Verifikation benötigt";
+		}else {
+			return "CaptchaBot | Verification Needed";
+		}
+	}
+	
+	public String returnVerificationManualDetailedPrompt() {
+		if(lang.equals("de")) {
+			return "Bitte gebe die Wörter des oberen Bildes an um den Verifikationsprozess zu beenden.";
+		}else {
+			return "Please enter the words from the image above to complete the Verification Process.";
+		}
+	}
+	
+	public String returnVerificationManualDMPrompt() {
+		if(lang.equals("de")) {
+			return "Bitte überprüfe deine Direktnachrichten um mit dem Verifikationsprozess fortzufahren";
+		}else {
+			return "Please check your direct messages to continue the verification process";
+		}
+	}
+	
+	public String returnVerificationInvalidCodeDescription() {
+		if(lang.equals("de")) {
+			return "Diese Antwort ist nicht korrekt. Bitte versuche es nochmal.";
+		}else {
+			return "The code you entered is incorrect. Please try again";
+		}
+	}
+	
 
 	//SETUP COMMAND TRANSLATIONS
 	public String returnSetupStepZeroDescription() {
@@ -423,7 +592,105 @@ public class TranslationManager {
 			return "Verification Score";
 		}
 	}
-
+	
+	//CUSTOM PREFIX COMMAND
+	public String returnCustomPrefixTitle() {
+		if(lang.equals("de")) {
+			return "Benutzerdefinierter Präfix";
+		}else {
+			return "Custom Prefix";
+		}
+	}
+	
+	public String returnCustomPrefixSuccess() {
+		if(lang.equals("de")) {
+			return "Präfix geändert!";
+		}else {
+			return "Prefix changed!";
+		}
+	}
+	
+	public String returnCustomPrefixMissingArgument() {
+		if(lang.equals("de")) {
+			return "Bitte gebe einen neuen Präfix an.";
+		}else {
+			return "Please provide a new prefix.";
+		}
+	}
+	
+	//LOG COMMAND
+	public String returnLogEnabled() {
+		if(lang.equals("de")) {
+			return "Logging wurde aktiviert";
+		}else {
+			return "Logging has been enabled";
+		}
+	}
+	
+	public String returnLogDisabled() {
+		if(lang.equals("de")) {
+			return "Logging wurde deaktiviert";
+		}else {
+			return "Logging has been disabled";
+		}
+	}
+	
+	public String returnLogChannelSet(String channel) {
+		if(lang.equals("de")) {
+			return "Der Logging Textkanal wurde zu "+channel+" gesetzt";
+		}else {
+			return "The log channel has been set to "+channel;
+		}
+	}
+	
+	public String returnLogDisabledMainDescription(String channel) {
+		if(lang.equals("de")) {
+			return "Aktueller Logging Textkanal: "+channel+"\n**Logging ist deaktiviert**\n\nAktionen: `enable`,`disable`,`setchannel`";
+		}else {
+			return "Current Log Channel: "+channel+"\n**Logging is disabled**\n\nActions: `enable`,`disable`,`setchannel`";
+		}
+	}
+	
+	public String returnLogEnabledMainDescription(String channel) {
+		if(lang.equals("de")) {
+			return "Aktueller Logging Textkanal: "+channel+"\n**Logging ist aktiviert**\n\nAktionen: `enable`,`disable`,`setchannel`";
+		}else {
+			return "Current Log Channel: "+channel+"\n**Logging is enabled**\n\nActions: `enable`,`disable`,`setchannel`";
+		}
+	}
+	
+	//AUTH COMMAND
+	public String returnAuthSentTitle() {
+		if(lang.equals("de")) {
+			return "Anmeldedaten gesendet!";
+		}else {
+			return "Credentials sent!";
+		}
+	}
+	
+	public String returnAuthSentDescription() {
+		if(lang.equals("de")) {
+			return "Die Anmeldedaten des Servers wurden dir durch eine Direktnachricht mitgeteilt.";
+		}else {
+			return "The guild's credentials have been sent to you via DM!";
+		}
+	}
+	
+	public String returnAuthDirectMessageTitle() {
+		if(lang.equals("de")) {
+			return "Deine Server Anmeldedaten";
+		}else {
+			return "Your Guild Credentials";
+		}
+	}
+	
+	public String returnAuthDirectMessageDescription(String server_id, String key) {
+		if(lang.equals("de")) {
+			return "Server ID: "+server_id+"\nKey: "+key+"\n\n*Nutze diese Anmeldedaten um dich in Dashboard bei https://console.discordcaptcha.xyz anzumelden.*";
+		}else {
+			return "Guild ID: "+server_id+"\nKey: "+key+"\n\n*Use these credentials to log in to the Web-Dashboard at https://console.discordcaptcha.xyz*";
+		}
+	}
 
 
 }
