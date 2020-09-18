@@ -2,8 +2,8 @@
 A repo made to help the Translation of CaptchaBot.
 
 ## Available Languages
-+ Danish
 + English
++ Danish
 + Spanish
 
 
