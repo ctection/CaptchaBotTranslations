@@ -1,8 +1,9 @@
 # CaptchaBotTranslations
 A repo made to help the Translation of CaptchaBot.
 
-## Added Translations
-+ Added Spanish Translation
+## Available Languages
++ Spanish
++ Danish
 
 
 ## Contribution
