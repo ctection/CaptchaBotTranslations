@@ -3,8 +3,8 @@ A repo made to help the Translation of CaptchaBot.
 
 ## Available Languages
 + English
-+ Danish
-+ Spanish
++ Deutsche
++ Español (España)
 
 
 ## Contribution
