@@ -74,14 +74,14 @@ public class TranslationManager {
 
 	//Votelocked Command Description
     public String returnVotelockedDescription() {
-        if(lang.equals("de")) {
-            return "Bitte stimme für CaptchaBot mit dem folgendem Link ab um fortzufahren:\nhttps://discordbots.org/bot/554631615565922364/vote/n/n*Premium und Enterprise Server haben keine Vote-gesperrten Befehle. Besuche https://ctection.com/shop/ um Premium zu besorgen.";
-        }else if(lang.equals("es")){
-            return "Por favor, vota usando el siguiente enlace:\nhttps://discordbots.org/bot/554631615565922364/vote/n/nLos Servidores Premium y Enterprise evitan los bloqueos de voto. Para adquirir, visita https://ctection.com/shop/";";
-        }else {
-            return "Please vote using the link below to continue:\nhttps://discordbots.org/bot/554631615565922364/vote/n/nPremium and Enterprise Servers bypass vote-locks. To purchase, visit https://ctection.com/shop/";
-        }
-    }
+		if(lang.equals("de")) {
+			return "Bitte stimme für CaptchaBot mit dem folgendem Link ab um fortzufahren:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium und Enterprise Server haben keine Vote-gesperrten Befehle. Besuche https://ctection.com/shop/ um Premium zu besorgen.";
+		}else if(lang.equals("es")){
+			return "Por favor, vota usando el siguiente enlace:\nhttps://discordbots.org/bot/554631615565922364/vote/n/nLos Servidores Premium y Enterprise evitan los bloqueos de voto. Para adquirir, visita https://ctection.com/shop/";";
+		}else {
+			return "Please vote using the link below to continue:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium and Enterprise Servers bypass vote-locks. To purchase, visit https://ctection.com/shop/";
+		}
+	}
 	
 	public String returnGenericCaptchaBotAdvert() {
 		if(lang.equals("de")) {
