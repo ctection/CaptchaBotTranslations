@@ -88,7 +88,7 @@ public class TranslationManager {
 		if(lang.equals("de")) {
 			return "Bitte stimme für CaptchaBot mit dem folgendem Link ab um fortzufahren:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium und Enterprise Server haben keine Vote-gesperrten Befehle. Besuche https://ctection.com/shop/ um Premium zu besorgen.";
 		}else if(lang.equals("es")){
-			return "Por favor, vota usando el siguiente enlace:\nhttps://discordbots.org/bot/554631615565922364/vote/n/nLos Servidores Premium y Enterprise evitan los bloqueos de voto. Para adquirir, visita https://ctection.com/shop/";";
+			return "Por favor, vota usando el siguiente enlace:\nhttps://discordbots.org/bot/554631615565922364/vote/n/nLos Servidores Premium y Enterprise evitan los bloqueos de voto. Para adquirir, visita https://ctection.com/shop/";
 		}else if(lang.equals("fr")) {
 			return "Veuillez voter en utilisant le lien ci-dessous pour continuer:\nhttps: //discordbots.org/bot/554631615565922364/vote\n\n*Les serveurs Premium et Enterprise contournent les verrous de vote. Pour acheter, visitez https://ctection.com/shop/";
 		}else {
@@ -119,6 +119,8 @@ public class TranslationManager {
 				return "Secure your server from malicious users and automated attacks: **[Invite CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
 			}
 		}
+		return "";
+	}
 
 	//KICK COMMAND TRANSLATIONS
 	//No Members Tagged Header
@@ -564,7 +566,7 @@ public class TranslationManager {
 		if(lang.equals("de")) {
 			return "Starte "+action;
 		}else if(lang.equals("es")){
-			return "Iniciando "+action
+			return "Iniciando "+action;
 		}else {
 			return "Starting "+action;
 		}
