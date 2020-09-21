@@ -9,7 +9,8 @@ public class TranslationManager {
 	public TranslationManager(String p_lang) {
 		supported_languages[0] = "en";
 		supported_languages[1] = "de";
-		supported_languages[2] = "es";
+		supported_languages[2] = "fr";
+		supported_languages[3] = "es";
 		lang = p_lang;
 	}
 
@@ -23,6 +24,8 @@ public class TranslationManager {
 			return "Genehmigungsfehler";
 		}else if(lang.equals("es")){
 			return "Error de Permisos";
+		}else if(lang.equals("fr")) {
+			return "Erreur d'autorisation";
 		}else {
 			return "Permission Error";
 		}
@@ -34,6 +37,8 @@ public class TranslationManager {
 			return "Dir fehlen `"+permission_node+"` Rechte um diesen Befehl auszuführen.";
 		}else if(lang.equals("es")){
 			return "Te falta acceso a `"+permission_node+"` Para Ejecutar este comando.";
+		}else if(lang.equals("fr")) {
+			return "Il vous manque l'autorisation `"+permission_node+"` pour ex�cuter cette commande.";
 		}else {
 			return "You are missing the `"+permission_node+"` Permission to execute this command.";
 		}
@@ -45,6 +50,8 @@ public class TranslationManager {
 			return "Premium oder Enterprise Abonnement erforderlich";
 		}else if(lang.equals("es")){
 			return "Requieres de la Suscripción Premium o Enterprise";
+		}else if(lang.equals("fr")) {
+			return "Abonnement Premium ou Entreprise requis.";
 		}else {
 			return "Premium or Enterprise Subscription Required";
 		}
@@ -56,6 +63,8 @@ public class TranslationManager {
 			return "Dieser Befehl ist nur für Premium Server verfügbar. Besorge dir hier Premium: https://ctection.com/shop/ oder antworte c/premium für mehr Informationen.";
 		}else if(lang.equals("es")){
 			return "Este comando está restringido a servidores Premium. Puedes comprar Premium en: https://ctection.com/shop/ o escribe c/premium para obtener mas información.";
+		}else if(lang.equals("fr")) {
+			return "Cette commande est verrouill�e sur les serveurs Premium. Achetez Premium ici: https://ctection.com/shop/ ou tapez c/premium pour plus d'informations.";
 		}else {
 			return "This command is locked to Premium Servers. Purchase Premium here: https://ctection.com/shop/ or type c/premium for more information.";
 		}
@@ -67,6 +76,8 @@ public class TranslationManager {
 			return "Dieser Befehl ist nur für Voter zugänglich";
 		}else if(lang.equals("es")){
 			return "Este comando está Limitado a los Votantes";
+		}else if(lang.equals("fr")) {
+			return "Cette commande est Votelocked";
 		}else {
 			return "This command is Votelocked";
 		}
@@ -78,16 +89,20 @@ public class TranslationManager {
 			return "Bitte stimme für CaptchaBot mit dem folgendem Link ab um fortzufahren:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium und Enterprise Server haben keine Vote-gesperrten Befehle. Besuche https://ctection.com/shop/ um Premium zu besorgen.";
 		}else if(lang.equals("es")){
 			return "Por favor, vota usando el siguiente enlace:\nhttps://discordbots.org/bot/554631615565922364/vote/n/nLos Servidores Premium y Enterprise evitan los bloqueos de voto. Para adquirir, visita https://ctection.com/shop/";";
+		}else if(lang.equals("fr")) {
+			return "Veuillez voter en utilisant le lien ci-dessous pour continuer:\nhttps: //discordbots.org/bot/554631615565922364/vote\n\n*Les serveurs Premium et Enterprise contournent les verrous de vote. Pour acheter, visitez https://ctection.com/shop/";
 		}else {
 			return "Please vote using the link below to continue:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium and Enterprise Servers bypass vote-locks. To purchase, visit https://ctection.com/shop/";
 		}
 	}
 	
 	public String returnGenericCaptchaBotAdvert() {
-		if(lang.equals("de")) {
+		if(lang.equals("de")) {			  
 			return "Sichere deinen Server von böswilligen Benutzern und automatisierten Angriffen: **[Lade CaptchaBot Ein!](https://discordcaptcha.com/invite/?ref=DM)**";
 		}else if(lang.equals("es")){
 			return "Asegura tu Servidor frente a usuarios maliciosos y ataques automatizados: **[Invita a CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
+		}else if(lang.equals("fr")) {
+				return "S�curisez votre serveur contre les utilisateurs malveillants et les attaques automatis�es: **[Invitez CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
 		}else {
 			return "Secure your server from malicious users and automated attacks: **[Invite CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
 		}
@@ -100,6 +115,8 @@ public class TranslationManager {
 			return "Unbekannter Nutzer";
 		}else if(lang.equals("es")){
 			return "Usuario Desconocido";
+		}else if(lang.equals("fr")) {
+			return "Utilisateur inconnu";
 		}else {
 			return "Unknown User";
 		}
@@ -111,6 +128,8 @@ public class TranslationManager {
 			return "Bitte nenne durch einen Mention welche(r) Nutzer gekickt werden soll. Es können maximal 10 Nutzer genannt werden. Beispiel: kick @User1 @User2 @User3";
 		}else if(lang.equals("es")){
 			return "Por favor, menciona a/los usuario(s) a expulsar. El limite son 10 usuarios de una sola vez. Ejemplo: kick @User1 @User2 @User3";
+		}else if(lang.equals("fr")) {
+			return "Veuillez mentionner le ou les utilisateurs � kicker. Un maximum de 10 utilisateurs peuvent �tre expuls�s en m�me temps. Exemple: kick @User1 @User2 @User3";
 		}else {
 			return "Please mention the user(s) to kick. A maximum of 10 users can be kicked at the same time. Example: kick @User1 @User2 @User3";
 		}
@@ -122,6 +141,8 @@ public class TranslationManager {
 			return no+" Nutzer wurden erfolgreich gekickt.";
 		}else if(lang.equals("es")){
 			return "Se han Expulsado "+no+" miembros.";
+		}else if(lang.equals("fr")) {
+			return "A donn� un coup de pied � "+no+" membres avec succ�s.";
 		}else {
 			return "Kicked "+no+" Members successfully.";
 		}
@@ -132,6 +153,8 @@ public class TranslationManager {
 			return "Nutzer Gekickt";
 		}else if(lang.equals("es")){
 			return "Miembros Expulsados";
+		}else if(lang.equals("fr")) {
+			return "Membres expuls�s";
 		}else {
 			return "Kicked Members";
 		}
@@ -144,6 +167,8 @@ public class TranslationManager {
 			return "Unbekannter Nutzer";
 		}else if(lang.equals("es")){
 			return "Usuario Desconocido";
+		}else if(lang.equals("fr")) {
+			return "Utilisateur inconnu";
 		}else {
 			return "Unknown User";
 		}
@@ -155,6 +180,8 @@ public class TranslationManager {
 			return "Bitte nenne durch einen Mention welche(r) Nutzer verbannt werden soll(en). Es können maximal 10 Nutzer genannt werden. Beispiel: ban @User1 @User2 @User3";
 		}else if(lang.equals("es")){
 			return "Por favor, menciona al/los usuario/s a Banear. El limite son 10 usuarios de una sola vez. Ejemplo: ban @User1 @User2 @User3";
+		}else if(lang.equals("fr")) {
+			return "Veuillez mentionner le ou les utilisateurs � bannir. Un maximum de 10 utilisateurs peuvent �tre interdits en m�me temps. Exemple: ban @User1 @User2 @User3";
 		}else {
 			return "Please mention the user(s) to ban. A maximum of 10 users can be banned at the same time. Example: ban @User1 @User2 @User3";
 		}
@@ -166,6 +193,8 @@ public class TranslationManager {
 			return no+" Nutzer wurden erfolgreich verbannt.";
 		}else if(lang.equals("es")){
 			return "Baneados "+no+" miembros.";
+		}else if(lang.equals("fr")) {
+			return "Bannissement de "+no+" membres r�ussi.";
 		}else {
 			return "Banned "+no+" Members successfully.";
 		}
@@ -176,6 +205,8 @@ public class TranslationManager {
 			return "Nutzer Verbannt";
 		}else if(lang.equals("es")){
 			return "Miembros Baneados";
+		}else if(lang.equals("fr")) {
+			return "Membres bannis";
 		}else {
 			return "Banned Members";
 		}
@@ -254,6 +285,8 @@ public class TranslationManager {
 			return "Unterstützt durch Premium";
 		}else if(lang.equals("es")){
 			return "Reservado a Premium";
+		}else if(lang.equals("fr")) {
+			return "Pris en charge par Premium";
 		}else {
 			return "Supported by Premium";
 		}
@@ -264,6 +297,8 @@ public class TranslationManager {
 			return "*Teste Premium kostenlos für 7 Tage auf https://ctection.com/shop/.*";
 		}else if(lang.equals("es")){
 			return "*Prueba Premium gratis durante 7 Dias ahora en https://ctection.com/shop/.*";
+		}else if(lang.equals("fr")) {
+			return "*Essayez Premium gratuitement pendant 7 jours maintenant sur https://ctection.com/shop/.*";
 		}else {
 			return "*Try Premium for free for 7 Days now at https://ctection.com/shop/.*";
 		}
@@ -274,6 +309,8 @@ public class TranslationManager {
 			return "Benutzerbefehle";
 		}else if(lang.equals("es")){
 			return "Comandos de Usuario";
+		}else if(lang.equals("fr")) {
+			return "Commandes utilisateur";
 		}else {
 			return "User Commands";
 		}
@@ -294,6 +331,8 @@ public class TranslationManager {
 			return "Fehler";
 		}else if(lang.equals("es")){
 			return "Error";
+		}else if(lang.equals("fr")) {
+			return "Erreur";
 		}else {
 			return "Error";
 		}
@@ -304,6 +343,8 @@ public class TranslationManager {
 			return "Etwas ist schief gelaufen. Bitte versuche es später erneut.";
 		}else if(lang.equals("es")){
 			return "Algo ha ido mal. Prueba de nuevo mas tarde.";
+		}else if(lang.equals("fr")) {
+			return "Quelque chose a mal tourn�. Veuillez r�essayer plus tard.";
 		}else {
 			return "Something went wrong. Please try again later.";
 		}
@@ -314,6 +355,8 @@ public class TranslationManager {
 			return "Erfolg";
 		}else if(lang.equals("es")){
 			return "Éxito";
+		}else if(lang.equals("fr")) {
+			return "Succ�s";
 		}else {
 			return "Success";
 		}
@@ -324,6 +367,8 @@ public class TranslationManager {
 			return module+" wurde aktiviert.";
 		}else if(lang.equals("es")){
 			return module+" ha sido habilitado";
+		}else if(lang.equals("fr")) {
+			return module+" a �t� activ�.";
 		}else {
 			return module+" has been enabled";
 		}
@@ -334,6 +379,8 @@ public class TranslationManager {
 			return module+" wurde deaktiviert.";
 		}else if(lang.equals("es")){
 			return module+" ha sido deshabilitado";
+		}else if(lang.equals("fr")) {
+			return module+" a �t� d�sactiv�.";
 		}else {
 			return module+" has been disabled";
 		}
@@ -344,6 +391,8 @@ public class TranslationManager {
 			return module+" ist aktuell aktiviert.";
 		}else if(lang.equals("es")){
 			return module+" está actualmente habilitado";
+		}else if(lang.equals("fr")) {
+			return module+" est actuellement activ�.";
 		}else {
 			return module+" is currently enabled";
 		}
@@ -354,6 +403,8 @@ public class TranslationManager {
 			return module+" ist aktuell deaktiviert.";
 		}else if(lang.equals("es")){
 			return module+" está actualmente deshabilitado";
+		}else if(lang.equals("fr")) {
+			return module+" est actuellement d�sactiv�.";
 		}else {
 			return module+" is currently disabled";
 		}
@@ -364,6 +415,8 @@ public class TranslationManager {
 			return "Versuche es erneut";
 		}else if(lang.equals("es")){
 			return "Prueba de Nuevo";
+		}else if(lang.equals("fr")) {
+			return "R�essayer";
 		}else {
 			return "Try Again";
 		}
@@ -374,6 +427,8 @@ public class TranslationManager {
 			return "Bitte erwähne einen Textkanal.";
 		}else if(lang.equals("es")){
 			return "Por favor, menciona un canal.";
+		}else if(lang.equals("fr")) {
+			return "Veuillez mentionner une canal de texte.";
 		}else {
 			return "Please mention a channel.";
 		}
@@ -384,6 +439,8 @@ public class TranslationManager {
 			return "Verbleibende Versuche";
 		}else if(lang.equals("es")){
 			return "Intentos restantes";
+		}else if(lang.equals("fr")) {
+			return "Tentatives restantes";
 		}else {
 			return "Remaining attempts";
 		}
@@ -394,6 +451,8 @@ public class TranslationManager {
 			return "Verifiziert";
 		}else if(lang.equals("es")){
 			return "Verificado";
+		}else if(lang.equals("fr")) {
+			return "V�rifi�";
 		}else {
 			return "Verified";
 		}
@@ -404,6 +463,8 @@ public class TranslationManager {
 			return "Nicht gesetzt";
 		}else if(lang.equals("es")){
 			return "No establecido";
+		}else if(lang.equals("fr")) {
+			return "Pas encore d�fini";
 		}else {
 			return "Not set";
 		}
@@ -414,6 +475,8 @@ public class TranslationManager {
 			return "Keine";
 		}else if(lang.equals("es")){
 			return "Ninguno";
+		}else if(lang.equals("fr")) {
+			return "Aucun";
 		}else {
 			return "None";
 		}
@@ -424,6 +487,8 @@ public class TranslationManager {
 			return "Aktiviert";
 		}else if(lang.equals("es")){
 			return "Habilitado";
+		}else if(lang.equals("fr")) {
+			return "Activ�";
 		}else {
 			return "Enabled";
 		}
@@ -434,6 +499,8 @@ public class TranslationManager {
 			return "Deaktiviert";
 		}else if(lang.equals("es")){
 			return "Deshabilitado";
+		}else if(lang.equals("fr")) {
+			return "d�sactiv�";
 		}else {
 			return "Disabled";
 		}
@@ -444,6 +511,8 @@ public class TranslationManager {
 			return "Verifizierte Mitglieder";
 		}else if(lang.equals("es")){
 			return "Miembros Verificados";
+		}else if(lang.equals("fr")) {
+			return "Membres v�rifi�s";
 		}else {
 			return "Verified Members";
 		}
@@ -536,6 +605,8 @@ public class TranslationManager {
 			return "Bitte absolviere diesen CAPTCHA um fortzufahren";
 		}else if(lang.equals("es")){
 			return "Por favor, completa este CAPTCHA para continuar";
+		}else if(lang.equals("fr")) {
+			return "Veuillez compl�ter ce CAPTCHA pour continuer";
 		}else {
 			return "Please complete this CAPTCHA to continue";
 		}
@@ -546,6 +617,8 @@ public class TranslationManager {
 			return "CaptchaBot | Verifikation benötigt";
 		}else if(lang.equals("es")){
 			return "CaptchaBot | Verificación Necesaria";
+		}else if(lang.equals("fr")) {
+			return "CaptchaBot | V�rification n�cessaire";
 		}else {
 			return "CaptchaBot | Verification Needed";
 		}
