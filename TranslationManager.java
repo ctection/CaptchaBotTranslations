@@ -95,7 +95,7 @@ public class TranslationManager {
 			return "Please vote using the link below to continue:\nhttps://discordbots.org/bot/554631615565922364/vote\n\n*Premium and Enterprise Servers bypass vote-locks. To purchase, visit https://ctection.com/shop/";
 		}
 	}
-	
+  
 	public String returnGenericCaptchaBotAdvert() {
 		if(lang.equals("de")) {			  
 			return "Sichere deinen Server von böswilligen Benutzern und automatisierten Angriffen: **[Lade CaptchaBot Ein!](https://discordcaptcha.com/invite/?ref=DM)**";
@@ -105,8 +105,20 @@ public class TranslationManager {
 				return "S�curisez votre serveur contre les utilisateurs malveillants et les attaques automatis�es: **[Invitez CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
 		}else {
 			return "Secure your server from malicious users and automated attacks: **[Invite CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
+    }
+  }
+    
+    
+	public String returnGenericCaptchaBotAdvert(boolean hide_branding) {
+		if(!hide_branding) {
+			if(lang.equals("de")) {
+				return "Sichere deinen Server von b�swilligen Benutzern und automatisierten Angriffen: **[Lade CaptchaBot Ein!](https://discordcaptcha.com/invite/?ref=DM)**";
+			}else if(lang.equals("fr")) {
+				return "S�curisez votre serveur contre les utilisateurs malveillants et les attaques automatis�es: **[Invitez CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
+			}else {
+				return "Secure your server from malicious users and automated attacks: **[Invite CaptchaBot!](https://discordcaptcha.com/invite/?ref=DM)**";
+			}
 		}
-	}
 
 	//KICK COMMAND TRANSLATIONS
 	//No Members Tagged Header
@@ -337,7 +349,7 @@ public class TranslationManager {
 			return "Error";
 		}
 	}
-	
+
 	public String returnGenericErrorDescription() {
 		if(lang.equals("de")) {
 			return "Etwas ist schief gelaufen. Bitte versuche es später erneut.";
@@ -349,7 +361,7 @@ public class TranslationManager {
 			return "Something went wrong. Please try again later.";
 		}
 	}
-	
+
 	public String returnGenericSuccessTitle() {
 		if(lang.equals("de")) {
 			return "Erfolg";
@@ -361,7 +373,7 @@ public class TranslationManager {
 			return "Success";
 		}
 	}
-	
+
 	public String returnGenericModuleEnabledChange(String module) {
 		if(lang.equals("de")) {
 			return module+" wurde aktiviert.";
@@ -370,10 +382,10 @@ public class TranslationManager {
 		}else if(lang.equals("fr")) {
 			return module+" a �t� activ�.";
 		}else {
-			return module+" has been enabled";
+			return module+" has been enabled.";
 		}
 	}
-	
+
 	public String returnGenericModuleDisabledChange(String module) {
 		if(lang.equals("de")) {
 			return module+" wurde deaktiviert.";
@@ -382,10 +394,10 @@ public class TranslationManager {
 		}else if(lang.equals("fr")) {
 			return module+" a �t� d�sactiv�.";
 		}else {
-			return module+" has been disabled";
+			return module+" has been disabled.";
 		}
 	}
-	
+
 	public String returnGenericModuleEnabled(String module) {
 		if(lang.equals("de")) {
 			return module+" ist aktuell aktiviert.";
@@ -394,10 +406,10 @@ public class TranslationManager {
 		}else if(lang.equals("fr")) {
 			return module+" est actuellement activ�.";
 		}else {
-			return module+" is currently enabled";
+			return module+" is currently enabled.";
 		}
 	}
-	
+
 	public String returnGenericModuleDisabled(String module) {
 		if(lang.equals("de")) {
 			return module+" ist aktuell deaktiviert.";
@@ -409,7 +421,7 @@ public class TranslationManager {
 			return module+" is currently disabled";
 		}
 	}
-	
+
 	public String returnGenericTryAgainTitle() {
 		if(lang.equals("de")) {
 			return "Versuche es erneut";
@@ -421,7 +433,7 @@ public class TranslationManager {
 			return "Try Again";
 		}
 	}
-	
+
 	public String returnGenericChannelMissingErrorDescription() {
 		if(lang.equals("de")) {
 			return "Bitte erwähne einen Textkanal.";
@@ -433,7 +445,7 @@ public class TranslationManager {
 			return "Please mention a channel.";
 		}
 	}
-	
+
 	public String returnGenericRemainingAttempts() {
 		if(lang.equals("de")) {
 			return "Verbleibende Versuche";
@@ -445,7 +457,7 @@ public class TranslationManager {
 			return "Remaining attempts";
 		}
 	}
-	
+
 	public String returnGenericVerifiedTitle() {
 		if(lang.equals("de")) {
 			return "Verifiziert";
@@ -457,7 +469,7 @@ public class TranslationManager {
 			return "Verified";
 		}
 	}
-	
+
 	public String returnGenericNotSet() {
 		if(lang.equals("de")) {
 			return "Nicht gesetzt";
@@ -469,7 +481,7 @@ public class TranslationManager {
 			return "Not set";
 		}
 	}
-	
+
 	public String returnGenericNone() {
 		if(lang.equals("de")) {
 			return "Keine";
@@ -481,7 +493,7 @@ public class TranslationManager {
 			return "None";
 		}
 	}
-	
+
 	public String returnGenericEnabled() {
 		if(lang.equals("de")) {
 			return "Aktiviert";
@@ -493,7 +505,7 @@ public class TranslationManager {
 			return "Enabled";
 		}
 	}
-	
+
 	public String returnGenericDisabled() {
 		if(lang.equals("de")) {
 			return "Deaktiviert";
@@ -505,7 +517,7 @@ public class TranslationManager {
 			return "Disabled";
 		}
 	}
-	
+
 	public String returnGenericVerifiedMembers() {
 		if(lang.equals("de")) {
 			return "Verifizierte Mitglieder";
@@ -517,7 +529,7 @@ public class TranslationManager {
 			return "Verified Members";
 		}
 	}
-	
+
 	public String returnGenericSuspiciousMembers() {
 		if(lang.equals("de")) {
 			return "Verdächtige Mitglieder";
@@ -527,7 +539,7 @@ public class TranslationManager {
 			return "Suspicious Members";
 		}
 	}
-	
+
 	public String returnGenericSuspiciousBots() {
 		if(lang.equals("de")) {
 			return "Verdächtige Bots";
@@ -537,7 +549,7 @@ public class TranslationManager {
 			return "Suspicious Bots";
 		}
 	}
-	
+
 	public String returnGenericAmountDetected(String amount) {
 		if(lang.equals("de")) {
 			return amount+" erkannt";
@@ -547,7 +559,7 @@ public class TranslationManager {
 			return amount+" detected";
 		}
 	}
-	
+
 	public String returnGenericStartingTitle(String action) {
 		if(lang.equals("de")) {
 			return "Starte "+action;
@@ -557,7 +569,7 @@ public class TranslationManager {
 			return "Starting "+action;
 		}
 	}
-	
+
 	public String returnGenericThisMightTakeAWhileTitle() {
 		if(lang.equals("de")) {
 			return "Dies könnte eine Weile dauern...";
@@ -567,7 +579,7 @@ public class TranslationManager {
 			return "This might take a while...";
 		}
 	}
-	
+
 	public String returnGenericCheckDMs() {
 		if(lang.equals("de")) {
 			return "Bitte überprüfe deine Direktnachrichten.";
@@ -577,9 +589,9 @@ public class TranslationManager {
 			return "Please check your Direct Messages.";
 		}
 	}
-	
+
 	//VERIFICATION PROCESS TRANSLATIONS
-	
+
 	public String returnVerificationAutomaticSuccessful() {
 		if(lang.equals("de")) {
 			return "Dein Account wurde automatisch verifiziert.";
@@ -589,7 +601,7 @@ public class TranslationManager {
 			return "Your Account has been automatically verified.";
 		}
 	}
-	
+
 	public String returnVerificationSuccessful() {
 		if(lang.equals("de")) {
 			return "Dein Account wurde verifiziert.";
@@ -599,7 +611,7 @@ public class TranslationManager {
 			return "Your Account has been verified.";
 		}
 	}
-	
+
 	public String returnVerificationManualPrompt() {
 		if(lang.equals("de")) {
 			return "Bitte absolviere diesen CAPTCHA um fortzufahren";
@@ -611,7 +623,7 @@ public class TranslationManager {
 			return "Please complete this CAPTCHA to continue";
 		}
 	}
-	
+
 	public String returnVerificationManualDetailedPromptTitle() {
 		if(lang.equals("de")) {
 			return "CaptchaBot | Verifikation benötigt";
@@ -623,17 +635,17 @@ public class TranslationManager {
 			return "CaptchaBot | Verification Needed";
 		}
 	}
-	
+
 	public String returnVerificationManualDetailedPrompt() {
 		if(lang.equals("de")) {
 			return "Bitte gebe die Wörter des oberen Bildes an um den Verifikationsprozess zu beenden.";
 		}else if(lang.equals("es")){
 			return "Por favor, escribe las Palabras de la imagen de arriba para completar la Verificación.";
 		}else {
-			return "Please enter the words from the image above to complete the Verification Process.";
+			return "Please enter the words from the image below to complete the Verification Process.";
 		}
 	}
-	
+
 	public String returnVerificationManualDMPrompt() {
 		if(lang.equals("de")) {
 			return "Bitte überprüfe deine Direktnachrichten um mit dem Verifikationsprozess fortzufahren";
@@ -643,7 +655,7 @@ public class TranslationManager {
 			return "Please check your direct messages to continue the verification process";
 		}
 	}
-	
+
 	public String returnVerificationInvalidCodeDescription() {
 		if(lang.equals("de")) {
 			return "Diese Antwort ist nicht korrekt. Bitte versuche es nochmal.";
@@ -653,7 +665,7 @@ public class TranslationManager {
 			return "The code you entered is incorrect. Please try again";
 		}
 	}
-	
+
 
 	//SETUP COMMAND TRANSLATIONS
 	public String returnSetupStepZeroDescription() {
@@ -662,7 +674,7 @@ public class TranslationManager {
 		}else if(lang.equals("es")){
 			return "Bienvenido a la configuración de CaptchaBot !\n\nDurante la configuración, pasaremos por todas aquellas opciones necesarias para que CaptchaBot funcione correctamente.\nPor favor, escribe 'next' para continuar.";
 		}else {
-			return "Welcome to the CaptchaBot Setup!\n\nDuring this setup, we will go through everything you need to use CaptchaBot correctly.\nPlease type 'next' to continue.";
+			return "Welcome to the CaptchaBot Setup!\n\nDuring this setup, we will go through everything you need to use CaptchaBot correctly.\nPlease type 'next' to continue or type `auto` to let CaptchaBot quickly set everything up automatically.";
 		}
 	}
 
@@ -702,7 +714,7 @@ public class TranslationManager {
 		}else if(lang.equals("es")){
 			return "La gerarquia de roles es incorrecta. Por favor, asegurate de que el rol CaptchaBot es superior al rol de Verificado.\n\nMas información: https://discordcaptcha.xyz/hc/doku.php?id=captchabot:role_hierarchy";
 		}else {
-			return "The Role Hierarchy is invalid. Please make sure that the CaptchaBot role is higher than the Verification Role.\n\nMore info: https://discordcaptcha.xyz/hc/doku.php?id=captchabot:role_hierarchy";
+			return "The Role Hierarchy is invalid. Please make sure that the CaptchaBot role is hierarchically higher than the Verification Role in the \"Roles\" section of your Server Settings.\n\nMore info: https://discordcaptcha.xyz/hc/doku.php?id=captchabot:role_hierarchy";
 		}
 	}
 
@@ -745,7 +757,7 @@ public class TranslationManager {
 		}else if(lang.equals("es")){
 			return "Configuración Global y de Permisos de Roles\n\nAjusta los permisos para que el rol everyone no pueda leer/enviar mensajes mientras que el rol de verificado si que pueda. También, **asegurate de configurar los permisos del canal verification-pool para que los nuevos miembros puedan escribir en el.**\n*Escribe '**next**' si has configurado estas cosas manualmente. Escribe '**auto**' para que CaptchaBot lo haga por ti.*";
 		}else {
-			return "Adjust Global and Role Permissions\n\nAdjust your Role Permissions so that the (at)everyone role can't read and send messages and so that the Role set as verification-role can. Also, **make sure that you adjust the permissions for the verification-pool so that new members can see and type in it to verify.**\n*Type '**next**' if you have done these things manually or type '**auto**' to let CaptchaBot do them for you.*";
+			return "Adjust Global and Role Permissions\n\nAdjust your Role Permissions so that the (at)everyone role can't read and send messages and so that the Role set as verification-role can. \n*Type '**next**' if you have done these things manually or type '**auto**' to let CaptchaBot do them for you.*";
 		}
 	}
 
@@ -778,7 +790,7 @@ public class TranslationManager {
 		}else if(lang.equals("es")){
 			return "CaptchaBot está listo para proteger tu servidor.\n***Comandos Útiles:***\n**c/auth** - Te envia las credenciales para acceder al panel para customizar CaptchaBot para obtener la mejor experiencia\n**c/massverify** - Verifica a todos los miembros de tu servidor de golpe\n**c/serverlist** - Edita tu entrada en la Lista de Servidores\n**c/antinsfw** - Previene el envio de contenido NSFW en los canales No-NSFW\n**c/antidox** - Previene el Doxing en tu servidor\n\n\nSi tienes cualquier pregunta o necesitas ayuda, sientete libre de unirte a nuestro servidor de asistencia: https://discordcaptcha.xyz/i/?c=captchabot";
 		}else {
-			return "CaptchaBot is now ready to protect your Discord server.\n***Useful Commands:***\n**c/auth** - Sends you the credentials for the dashboard to customize CaptchaBot for the best experience\n**c/massverify** - Assign all current members the Verified Role\n**c/serverlist** - Manage your Server list entry\n**c/antinsfw** - Prevent NSFW Media from being posted within Non-NSFW Channels\n**c/antidox** - Prevent DOXing on your Server\n\n\nIf you have any questions or need support, feel free to join our support server by clicking here: https://discordcaptcha.xyz/i/?c=captchabot";
+			return "CaptchaBot is now ready to protect your Discord server.\nTo Test your verification setup, type c/verify and include no_aicaptcha as an argument if you want to test manual verification. CaptchaBot will **create temporary text channels** for every new manual verification attempt by default - they will be automatically deleted either after 5 Minutes or after the verification process has finished.\n***Useful Commands:***\n**c/auth** - Sends you the credentials for the dashboard to customize CaptchaBot for the best experience\n**c/massverify** - Assign all current members the Verified Role\n**c/serverlist** - Manage your Server list entry\n**c/antinsfw** - Prevent NSFW Media from being posted within Non-NSFW Channels\n**c/antidox** - Prevent DOXing on your Server\n**c/captcha** - Manage the Captcha Verification Channels\n\nIf you have any questions or need support, feel free to join our support server by clicking here: https://discordcaptcha.xyz/i/?c=captchabot";
 		}
 	}
 
@@ -842,7 +854,7 @@ public class TranslationManager {
 			return "Verification Score";
 		}
 	}
-	
+
 	//CUSTOM PREFIX COMMAND
 	public String returnCustomPrefixTitle() {
 		if(lang.equals("de")) {
@@ -853,7 +865,7 @@ public class TranslationManager {
 			return "Custom Prefix";
 		}
 	}
-	
+
 	public String returnCustomPrefixSuccess() {
 		if(lang.equals("de")) {
 			return "Präfix geändert!";
@@ -863,7 +875,7 @@ public class TranslationManager {
 			return "Prefix changed!";
 		}
 	}
-	
+
 	public String returnCustomPrefixMissingArgument() {
 		if(lang.equals("de")) {
 			return "Bitte gebe einen neuen Präfix an.";
@@ -873,7 +885,7 @@ public class TranslationManager {
 			return "Please provide a new prefix.";
 		}
 	}
-	
+
 	//LOG COMMAND
 	public String returnLogEnabled() {
 		if(lang.equals("de")) {
@@ -884,7 +896,7 @@ public class TranslationManager {
 			return "Logging has been enabled";
 		}
 	}
-	
+
 	public String returnLogDisabled() {
 		if(lang.equals("de")) {
 			return "Logging wurde deaktiviert";
@@ -894,7 +906,7 @@ public class TranslationManager {
 			return "Logging has been disabled";
 		}
 	}
-	
+
 	public String returnLogChannelSet(String channel) {
 		if(lang.equals("de")) {
 			return "Der Logging Textkanal wurde zu "+channel+" gesetzt";
@@ -904,7 +916,7 @@ public class TranslationManager {
 			return "The log channel has been set to "+channel;
 		}
 	}
-	
+
 	public String returnLogDisabledMainDescription(String channel) {
 		if(lang.equals("de")) {
 			return "Aktueller Logging Textkanal: "+channel+"\n**Logging ist deaktiviert**\n\nAktionen: `enable`,`disable`,`setchannel`";
@@ -914,7 +926,7 @@ public class TranslationManager {
 			return "Current Log Channel: "+channel+"\n**Logging is disabled**\n\nActions: `enable`,`disable`,`setchannel`";
 		}
 	}
-	
+
 	public String returnLogEnabledMainDescription(String channel) {
 		if(lang.equals("de")) {
 			return "Aktueller Logging Textkanal: "+channel+"\n**Logging ist aktiviert**\n\nAktionen: `enable`,`disable`,`setchannel`";
@@ -924,7 +936,7 @@ public class TranslationManager {
 			return "Current Log Channel: "+channel+"\n**Logging is enabled**\n\nActions: `enable`,`disable`,`setchannel`";
 		}
 	}
-	
+
 	//AUTH COMMAND
 	public String returnAuthSentTitle() {
 		if(lang.equals("de")) {
@@ -935,7 +947,7 @@ public class TranslationManager {
 			return "Credentials sent!";
 		}
 	}
-	
+
 	public String returnAuthSentDescription() {
 		if(lang.equals("de")) {
 			return "Die Anmeldedaten des Servers wurden dir durch eine Direktnachricht mitgeteilt.";
@@ -945,7 +957,7 @@ public class TranslationManager {
 			return "The guild's credentials have been sent to you via DM!";
 		}
 	}
-	
+
 	public String returnAuthDirectMessageTitle() {
 		if(lang.equals("de")) {
 			return "Deine Server Anmeldedaten";
@@ -955,7 +967,7 @@ public class TranslationManager {
 			return "Your Guild Credentials";
 		}
 	}
-	
+
 	public String returnAuthDirectMessageDescription(String server_id, String key) {
 		if(lang.equals("de")) {
 			return "Server ID: "+server_id+"\nKey: "+key+"\n\n*Nutze diese Anmeldedaten um dich in Dashboard bei https://console.discordcaptcha.xyz anzumelden.*";
@@ -965,7 +977,7 @@ public class TranslationManager {
 			return "Guild ID: "+server_id+"\nKey: "+key+"\n\n*Use these credentials to log in to the Web-Dashboard at https://console.discordcaptcha.xyz*";
 		}
 	}
-	
+
 	//WARN COMMAND
 	public String returnWarnSuccessTitle() {
 		if(lang.equals("de")) {
@@ -976,7 +988,7 @@ public class TranslationManager {
 			return "User warned";
 		}
 	}
-	
+
 	public String returnWarnSuccessDescription() {
 		if(lang.equals("de")) {
 			return "Nutzer wurde erfolgreich Verwarnt.";
@@ -986,7 +998,7 @@ public class TranslationManager {
 			return "User was warned successfully.";
 		}
 	}
-	
+
 	public String returnWarnArgumentsMissingTitle() {
 		if(lang.equals("de")) {
 			return "Argumente Fehlen";
@@ -996,7 +1008,7 @@ public class TranslationManager {
 			return "Arguments missing";
 		}
 	}
-	
+
 	public String returnWarnArgumentsMissingDescription() {
 		if(lang.equals("de")) {
 			return "Richtige Benutzung:\nc/warn @Nutzer Grund";
@@ -1006,6 +1018,16 @@ public class TranslationManager {
 			return "Proper command usage:\nc/warn @User Reason";
 		}
 	}
+
+	//RR COMMAND
+	public String returnRRMainDescription() {
+		if(lang.equals("de")) {
+			return "Erstelle ein Rollen Reaktionsmenu um deinen Mitgliedern die m�glichkeit zu geben, deren Rollen selber auszuw�hlen.\n\nAktionen: `create`,`edit`,`delete`";
+		}else {
+			return "Create Reaction Role Messages to allow Members to pick what Roles they want.\n\nActions: `create`,`edit`,`delete`";
+		}
+	}
+
 
 
 }
